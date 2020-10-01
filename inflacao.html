@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflação</title>
+    
+    <script> 
+        function pulaLinha(){
+            document.write("<br> "); 
+        }
+        
+        function colocaLinha(){
+            document.write("<hr>"); 
+        }
+        
+        function inflacao(preco1, preco2){
+            
+            var resultadoInflacao = preco1 - preco2; 
+            return resultadoInflacao; 
+        }
+        
+        function inflacaoMedia(preco1, preco2, preco3){
+            var resultadoInflacaoMedia = (preco1 + preco2 + preco3)/ 3; 
+            return resultadoInflacaoMedia;
+        }
+
+        function estimativaDiaria(precoProduto1, precoProduto2) {
+            var resultadoEstimativaDiaria = (precoProduto1 - precoProduto2)/6; 
+            return resultadoEstimativaDiaria; 
+        }
+        
+        
+        var inflacaoTomate = inflacao(4.70 , 3.30); 
+        var inflacaoArroz = inflacao(3.25 , 2.99); 
+        var inflacaoCenoura = inflacao(4.14 , 3.99); 
+        
+        
+    
+        document.write("A inflação do tomate é: " + inflacaoTomate); 
+        pulaLinha(); 
+        document.write("A inflação do arroz é: " + inflacaoArroz); 
+        pulaLinha(); 
+        document.write("A inflação da cenoura é: " + inflacaoCenoura); 
+        colocaLinha(); 
+        
+        
+    
+
+        var inflacaoMediaTomate = inflacao(4.70 , 3.30); 
+        var inflacaoMediaArroz = inflacao(3.25 , 2.99); 
+        var inflacaoMediaCenoura = inflacao(4.14, 3.99); 
+
+      
+        
+        document.write("A inflação Média é:  " + (inflacaoMediaTomate + inflacaoMediaArroz + inflacaoMediaCenoura)/3);
+        colocaLinha(); 
+     
+
+       
+        document.write("A Estimativa Diária do tomate é: " + estimativaDiaria(4.70 , 3.30));
+        pulaLinha(); 
+        document.write("A Estimativa Diária do arroz é: " + estimativaDiaria(3.25, 2.99));
+        pulaLinha(); 
+        document.write("A Estimativa Diária da cenoura é: " + estimativaDiaria(4.14, 3.99));
+        colocaLinha(); 
+        
+        
+        
+
+        //
+
+
+
+        
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>

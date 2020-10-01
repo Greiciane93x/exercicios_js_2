@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rateio  Joselito</title>
+    <script> 
+          
+        function pulaLinha(){
+            
+            document.write("<br>"); 
+            document.write("<br>"); 
+        }
+        
+        function mostra(frase){
+            document.write(frase); 
+            pulaLinha(); 
+        }
+
+
+        function distribuirLaranjas(qtdLaranjas, numVizinhos){
+            var distribuicaoVizinhos =  qtdLaranjas/ numVizinhos; 
+           return  distribuicaoVizinhos; 
+
+        }
+        function restaJoselito(qtdLaranjas, numVizinhos){
+           var restaJoselito; 
+           return restaJoselito = qtdLaranjas % numVizinhos; 
+
+        }
+        
+
+        var numLaranjas = parseInt(prompt("Quantas laranjas Joselito possui? ")); 
+        var numVizinhos = parseInt(prompt("Entre quantos vizinhos será distribuído? ")); 
+
+        var rateio = distribuirLaranjas(numLaranjas, numVizinhos); 
+        var qtdLaranjasJoselito = restaJoselito(numLaranjas, numVizinhos); 
+
+        mostra("O resultado do rateio: " + rateio + " para cada vizinho." ); 
+        mostra("O que restou para Joselito: " + qtdLaranjasJoselito); 
+        
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>

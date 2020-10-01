@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Resilia</title>
+    
+    <script>
+       
+        
+        function pulaLinha(){
+            document.write("<br>"); 
+        }
+        
+        function mostra(frase){
+            document.write(frase); 
+            
+        }
+        
+        function calculaImposto(precoPizza)  {
+            var impostoPizza = 8.9/100; 
+            var resultadoImposto = precoPizza * impostoPizza;
+            return resultadoImposto; 
+            
+        }
+        function calculaLucroLiquido(custoPizzaProduzida, precoPizzaVendida){
+            var impostoPizza = 8.9/100; 
+            var lucroLiquido = (custoPizzaProduzida - precoPizzaVendida) * impostoPizza; 
+            return lucroLiquido;
+        }
+        
+        
+        var nomePizza = prompt("Por favor, informe o sabor da pizza: " );
+        var impostoPizza = calculaImposto(30); 
+        var lucroLiquido = calculaLucroLiquido(30, 25); 
+        mostra("O sabor da pizza é: " + nomePizza); 
+        pulaLinha(); 
+        mostra("O imposto calculado é: " + impostoPizza); 
+        pulaLinha(); 
+        mostra("O lucro líquido é de: " + lucroLiquido); 
+
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
