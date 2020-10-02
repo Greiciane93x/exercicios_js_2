@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    
+    <script>
+        
+        function pulaLinha(){
+            document.write("<br><br>"); 
+        }
+        function mostra(frase){
+            document.write( frase ); 
+            pulaLinha(); 
+        }
+        
+        function concatenaString(texto1,texto2){
+            var texto = document.write(texto1+" "+texto2); 
+            return texto; 
+        }
+        
+        function saudacao(nome){
+            return document.write("Olá " + nome + ". Tudo bem " + nome + "?"); 
+            
+        }
+        function restoDeNove(numero){
+            
+            var resto; 
+            resto = (numero % 9); 
+            return document.write("O resto do número: " + numero + " dividido por 9 é: " + resto); 
+            
+        }
+        function idadePermissaoDirigir(idadeUsuario, idadePermitida){
+            idadePermitida = 18; 
+            if(idadeUsuario >= idadePermitida) {
+                return document.write("A idade do usuário é válida para dirigir. Ele possui " + idadeUsuario + " anos."); 
+            }else{
+                return document.write("A idade do usuário não é válida para dirigir. Ele possui " + idadeUsuario + " anos."); 
+            }
+            
+        }
+        function idadePermissaoBeber(idadeUsuario, idadePermitida){ 
+            idadePermitida = 18; 
+            if(idadeUsuario >= idadePermitida) {
+                return document.write("A idade do usuário é válida para beber. Ele possui " + idadeUsuario + " anos."); 
+            }else{
+                return document.write("A idade do usuário não é válida para beber. Ele possui " + idadeUsuario + " anos."); 
+            }
+        }
+        function semaforo(corSemaforo){
+            
+            if (corSemaforo == "verde"){
+                document.write("Pode passar! A cor escolhida foi: " + corSemaforo ); 
+            }else if(corSemaforo == "amarelo"){
+                document.write("Melhor frear! A cor escolhida foi: " + corSemaforo ); 
+            }else if(corSemaforo == "vermelho") {
+                document.write("Pare já! A cor escolhida foi: " + corSemaforo ); 
+            }else{
+                document.write("Por favor, escolha as cores do semáforo existentes. "); 
+            }
+        }
+        
+        function exibirMenuBebida(bebida){
+            if(bebida == "refrigerante"){
+                document.write("A bebida escolhida foi: " + bebida); 
+            }else if(bebida == "suco"){
+                document.write("A bebida escolhida foi: " + bebida); 
+            }else if (bebida == "água"){
+                document.write("A bebida escolhida foi: " + bebida);
+                
+            }else{
+                document.write("Por favor, escolha uma bebida disponível. "); 
+            }
+        }
+        function exibirMenuBebidaNum(bebida){
+            
+            
+            if(bebida == 1){
+                document.write("A bebida escolhida foi refrigerante. "); 
+            }else if(bebida == 2){
+                document.write("A bebida escolhida foi suco. "); 
+            }else if(bebida == 3){
+                document.write("A bebida escolhida foi água. "); 
+            }else{
+                document.write("Por favor, escolha uma bebida disponível."); 
+            }
+        }
+        
+        
+        
+        concatenaString("Olá", "Mundo!"); 
+        pulaLinha();
+        saudacao(prompt("Informe seu nome ")); 
+        pulaLinha();
+        restoDeNove(prompt("Por favor, informe o número ")); 
+        pulaLinha(); 
+        idadePermissaoDirigir(prompt("Por favor, informe a idade do usuário para saber se ele pode dirigir ")); 
+        pulaLinha(); 
+        idadePermissaoBeber(prompt("Por favor, informe a idade do usuário para saber se ele pode beber ")); 
+        pulaLinha(); 
+        semaforo(prompt("Por favor, informe as cores do semáforo "));
+        pulaLinha(); 
+        exibirMenuBebida(prompt("Por favor, informe a bebida de sua escolha "));  
+        pulaLinha(); 
+        exibirMenuBebidaNum(prompt("Por favor, informe o id da sua bebida ")); 
+        
+    </script> 
+    
+</body>
+</html>
